@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "926038283509",
+    "project_id": "financeexpenses-a7536",
+    "storage_bucket": "financeexpenses-a7536.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926038283509:android:30c7f92de08486388ba1bc",
+        "android_client_info": {
+          "package_name": "com.example.finance_expenses"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyUfSbaDWfs6LOlmcJYjaW1lXO3O2QOLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
