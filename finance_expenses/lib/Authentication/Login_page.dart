@@ -3,8 +3,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
+import '../HomePage/HomePage.dart';
 import '../Lateuse/Colors.dart';
-import 'HomePage.dart';
+
 import 'ResetPasswordPage.dart';
 
 class LoginPage extends StatefulWidget {
@@ -25,8 +26,8 @@ class _LoginPageState extends State<LoginPage> {
         email: _emailController.text,
         password: _passwordController.text,
       );
-      Navigator.of(context).pushReplacement(MaterialPageRoute(
-          builder: (context) => HomePage(user: userCredential.user!)));
+      Navigator.of(context)
+          .pushReplacement(MaterialPageRoute(builder: (context) => HomePage()));
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Failed to sign in')),

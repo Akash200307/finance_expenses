@@ -18,7 +18,7 @@ class OnboardingPage extends StatelessWidget {
                     color: primary,
                     borderRadius: BorderRadius.circular(20),
                     image: DecorationImage(
-                      image: AssetImage('assets/illustration.png'),
+                      image: AssetImage('assets/img/Illustration.png'),
                       scale: 0.9,
                       fit: BoxFit.none,
                     ),

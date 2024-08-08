@@ -1,7 +1,8 @@
 import 'package:finance_expenses/InitialPage/GetStartedPage.dart';
-import 'package:finance_expenses/Lateuse/Colors.dart';
+import 'package:finance_expenses/data/ExpenseData.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:provider/provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -14,13 +15,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: primary),
-        useMaterial3: true,
+    return ChangeNotifierProvider(
+      create: (context) => ExpenseData(),
+      builder: (context, child) => MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: OnboardingPage(),
       ),
-      home: OnboardingPage(),
     );
   }
 }
